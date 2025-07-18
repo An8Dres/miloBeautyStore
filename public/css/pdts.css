@@ -1,0 +1,143 @@
+.main {
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    padding: 20px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    align-items: center;
+    justify-content: center;
+}
+
+.articulo {
+    background: var(--back);
+    color: var(--text);
+    width: 100%;
+    height: 510px;
+    display: grid;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px var(--shadow);
+
+    &:hover {
+        img { scale: 1.1 }
+
+        p { 
+            color: var(--title);
+            text-decoration: underline
+        }
+    }
+
+    &:active:not(:focus-within) {
+        p { 
+            color: var(--color2); 
+        }
+    }   
+
+    section:first-child {
+        position: relative;
+    }
+    .btn_add {
+        padding: 6px;
+        border-radius: 0 16px 0 16px;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        svg {
+            fill: var(--medium);
+            text-shadow: 0 0 10px black;
+
+            &:first-child {
+                width: 20px;
+                height: 20px;
+                margin-bottom: -50px;
+            }
+            &:last-child {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        &:hover svg { 
+            fill: var(--color2);
+            text-shadow: 0 0 10px black;
+        }
+    }
+
+    section:last-child { 
+        background: var(--back);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 10px;
+    }
+    .btn_buy {
+        font-size: .8em;
+        font-weight: 500;
+        background: var(--color1);
+        color: var(--back);
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px var(--shadow);
+        transition: scale 100ms ease;
+        
+        &:hover {
+            filter: brightness(1.1);
+        }
+
+        &:active {
+            background: var(--color2);
+            box-shadow: inset 2px 2px 5px #830048;
+            filter: brightness(.9);
+            scale: 0.98
+        }
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 3/4;
+        transition: scale 150ms ease-out;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    span {
+        font-weight: bolder;
+        font-size: 1.5em;
+        color: var(--title);
+        position: relative;
+
+        &::before {
+            content: "$";
+        }
+        &::after {
+            content: "cop";
+            font-weight: 500;
+            font-size: 0.5em;
+            color: var(--text);
+            position: absolute;
+        }
+    }
+}
+
+@media (width < 800px) {
+    .main {
+        grid-template-columns: repeat(auto-fit, 200px);
+    }
+}
+
+@media (width < 600px) {
+    .main {
+        padding: 10px;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
