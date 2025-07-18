@@ -1,0 +1,77 @@
+[
+  {
+    "id": "001",
+    "name": "Serum de Arroz BioAqua BQY60582",
+    "price": "4.400"
+  },
+  {
+    "id": "002",
+    "name": "Serum grande de arroz BioAcua BQY11428",
+    "price": "7.000"
+  },
+  {
+    "id": "003",
+    "name": "Tinta para labios Gel Ink MYK6202",
+    "price": "8.000"
+  },
+  {
+    "id": "004",
+    "name": "Brillo Mágico Magic LC808",
+    "price": "3.000"
+  },
+  {
+    "id": "005",
+    "name": "Serum de Rosa BQY60582",
+    "price": "4.500"
+  },
+  {
+    "id": "006",
+    "name": "Brochas Kabukis x10 Marmol MDH-822",
+    "price": "9.500"
+  },
+  {
+    "id": "007",
+    "name": "Contorno de Rosa BioAqua BQY80038",
+    "price": "2.800"
+  },
+  {
+    "id": "008",
+    "name": "Jabón de Rosa BioAqua BQY60551",
+    "price": "6.000"
+  },
+  {
+    "id": "009",
+    "name": "Pestañina Prosa Fucsia 15191",
+    "price": "14.500"
+  },
+  {
+    "id": "010",
+    "name": "Pestañina Prosa Morada 15153",
+    "price": "14.500"
+  },
+  {
+    "id": "011",
+    "name": "Rubor Romantic Flower",
+    "price": "3.500"
+  },
+  {
+    "id": "012",
+    "name": "Corrector Pro surtido YR-1062",
+    "price": "2.500"
+  },
+  {
+    "id": "013",
+    "name": "Tinta gelatina Jelly R1465",
+    "price": "5.000"
+  },
+  {
+    "id": "014",
+    "name": "Velo de ácido salicílico BioAqua",
+    "price": "1.000"
+  },
+  {
+    "id": "015",
+    "name": "Velo de Rosa con A-H BioAqua",
+    "price": "1.000"
+  }
+]
